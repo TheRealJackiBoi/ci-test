@@ -1,0 +1,16 @@
+GET http://localhost:7007/persons
+
+### Get person by id
+GET http://localhost:7007/persons/3
+Accept: application/json
+Content-Type: application/json
+
+### query-param-demo
+GET http://localhost:7007/persons/query-param-demo?name=Jan&age=20
+
+### x-my-header-demo
+GET http://localhost:7007/persons/headers-demo
+x-my-header: hello
+
+### 404 test
+GET http://localhost:7007/persons/10
